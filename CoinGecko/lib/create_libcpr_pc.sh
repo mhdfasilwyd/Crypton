@@ -12,4 +12,4 @@ make
 sudo make install
 
 # Copy Library to Local
-cp -ar lib/. ../../../lib/
+cp -ar lib/. ../../../lib/lib_pc

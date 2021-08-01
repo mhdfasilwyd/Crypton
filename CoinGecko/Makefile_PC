@@ -25,7 +25,7 @@ SOURCES  = ./src/asset_platforms.cpp \
 	./src/web.cpp
 OBJECTS  = $(SOURCES:.cpp=.o)
 
-TARGET   = ./lib/libcoingecko.so
+TARGET   = ./lib/lib_pc/libcoingecko.so
 
 all: $(TARGET)
 
