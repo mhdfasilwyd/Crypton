@@ -1,0 +1,1 @@
+g++ -I../include/ -L../lib/ -Wall -o test test.cpp -lcoingecko -lcpr

@@ -4,7 +4,7 @@
 
 CC = g++
 CPPFLAGS = -fPIC -Wall -c -std=c++14 -I./include
-LDFLAGS  = -shared -lcpr
+LDFLAGS  = -shared
 
 SOURCES  = ./src/asset_platforms.cpp \
 	./src/categories.cpp \
@@ -25,7 +25,7 @@ SOURCES  = ./src/asset_platforms.cpp \
 	./src/web.cpp
 OBJECTS  = $(SOURCES:.cpp=.o)
 
-TARGET   = libcoingecko.so
+TARGET   = ./lib/libcoingecko.so
 
 all: $(TARGET)
 
