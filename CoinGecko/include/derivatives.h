@@ -13,7 +13,7 @@ namespace gecko {
 			//    listDerivativeTickers()
 			//    listDerivativeTickers("all")
 			// Notes: none
-			DllExport gecko::web::response listDerivativeTickers(
+			gecko::web::response listDerivativeTickers(
 				OPTIONAL std::string include_tickers = "unexpired"
 			);
 
@@ -25,7 +25,7 @@ namespace gecko {
 			//    getDerivativeMarketExchanges("trade_volume_24h_btc_asc")
 			//    getDerivativeMarketExchanges("trade_volume_24h_btc_asc", 20, 1)
 			// Notes: none
-			DllExport gecko::web::response getDerivativeMarketExchanges(
+			gecko::web::response getDerivativeMarketExchanges(
 				OPTIONAL std::string order = "name_desc",
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
@@ -38,7 +38,7 @@ namespace gecko {
 			//    getDerivativeExchangeData("bitmex")
 			//    getDerivativeExchangeData("bitmex", "all")
 			// Notes: none
-			DllExport gecko::web::response getDerivativeExchangesData(
+			gecko::web::response getDerivativeExchangesData(
 				REQUIRED std::string id,
 				OPTIONAL std::string include_tickers = "unexpired"
 			);
@@ -49,6 +49,6 @@ namespace gecko {
 			// Example(s):
 			//    getDerivativeExchangesNameAndID()
 			// Notes: none
-			DllExport gecko::web::response getDerivativeExchangesNameAndID();
+			gecko::web::response getDerivativeExchangesNameAndID();
 	};
 }

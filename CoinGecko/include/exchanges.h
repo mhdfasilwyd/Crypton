@@ -14,7 +14,7 @@ namespace gecko {
 			//    getExchanges(100)
 			//    getExchanges(100, 2)
 			// Notes: none
-			DllExport gecko::web::response getExchanges(
+			gecko::web::response getExchanges(
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
 			);
@@ -25,7 +25,7 @@ namespace gecko {
 			// Example(s):
 			//    listExchangeInfo()
 			// Notes: none
-			DllExport gecko::web::response listExchangeInfo();
+			gecko::web::response listExchangeInfo();
 
 			// Action: fetches market exchange volume in BTC and top 100 tickers only
 			// Returns: gecko::web::response
@@ -33,7 +33,7 @@ namespace gecko {
 			// Example(s):
 			//    getExchangeVolume("binance")
 			// Notes: none
-			DllExport gecko::web::response getExchangeVolume(
+			gecko::web::response getExchangeVolume(
 				REQUIRED std::string id
 			);
 
@@ -44,7 +44,7 @@ namespace gecko {
 			//    getExchangeTickers("binance", NULL, true)
 			//    getExchangeTickers("binance", "bitcoin")
 			// Notes: none
-			DllExport gecko::web::response getExchangeTickers(
+			gecko::web::response getExchangeTickers(
 				REQUIRED std::string id,
 				OPTIONAL const char* coin_ids = NULL,
 				OPTIONAL bool include_exchange_logo = false,
@@ -60,7 +60,7 @@ namespace gecko {
 			//    getExchangeStatusUpdates("binance")
 			//    getExchangeStatusUpdates("binance", 20)
 			// Notes: function is in BETA
-			DllExport gecko::web::response getExchangeStatusUpdates(
+			gecko::web::response getExchangeStatusUpdates(
 				REQUIRED std::string id,
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
@@ -72,7 +72,7 @@ namespace gecko {
 			// Example(s):
 			//    getExchangeVolumeChart("binance", "1")
 			// Notes: function is in BETA
-			DllExport gecko::web::response getExchangeVolumeChart(
+			gecko::web::response getExchangeVolumeChart(
 				REQUIRED std::string id,
 				REQUIRED std::string days
 			);

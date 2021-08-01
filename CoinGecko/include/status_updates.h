@@ -13,7 +13,7 @@ namespace gecko {
 			//    getStatusUpdates()
 			//    getStatusUpdates(NULL, NULL, 20, 1)
 			// Notes: none
-			DllExport gecko::web::response getStatusUpdates(
+			gecko::web::response getStatusUpdates(
 				OPTIONAL const char* category = NULL,
 				OPTIONAL const char* project_type = NULL,
 				OPTIONAL unsigned short per_page = 100,

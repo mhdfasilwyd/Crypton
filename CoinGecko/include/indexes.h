@@ -13,7 +13,7 @@ namespace gecko {
 			//    listIndexes()
 			//    listIndexes(20, 1)
 			// Notes: none
-			DllExport gecko::web::response listIndexes(
+			gecko::web::response listIndexes(
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
 			);
@@ -24,7 +24,7 @@ namespace gecko {
 			// Example(s):
 			//    getMarketIndexByMarketIdAndIndexId(market_id: get at /exchanges/list, id: get at /indexes/list)
 			// Notes: none
-			DllExport gecko::web::response getMarketIndexByMarketIdAndIndexId(
+			gecko::web::response getMarketIndexByMarketIdAndIndexId(
 				REQUIRED std::string market_id,
 				REQUIRED std::string id
 			);
@@ -35,7 +35,7 @@ namespace gecko {
 			// Example(s):
 			//    listIndexInfo()
 			// Notes: none
-			DllExport gecko::web::response listIndexInfo();
+			gecko::web::response listIndexInfo();
 
 			// Action: fetches market index by market id and market index id
 			// Returns: gecko::web::response
@@ -43,7 +43,7 @@ namespace gecko {
 			// Example(s):
 			//    getMarketIndexByMarketIdAndMarketIndexId(market_id: refer /exchanges/list, id: refer /indexes/list)
 			// Notes: none
-			DllExport gecko::web::response getMarketIndexByMarketIdAndMarketIndexId(
+			gecko::web::response getMarketIndexByMarketIdAndMarketIndexId(
 				REQUIRED std::string market_id,
 				REQUIRED std::string id
 			);

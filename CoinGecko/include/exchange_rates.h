@@ -12,6 +12,6 @@ namespace gecko {
 			// Example(s):
 			//    getExchangeRates()
 			// Notes: none
-			DllExport gecko::web::response getExchangeRates();
+			gecko::web::response getExchangeRates();
 	};
 }

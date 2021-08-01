@@ -12,6 +12,6 @@ namespace gecko {
 			// Example(s):
 			//    getAssetPlatforms();
 			// Notes: none
-			DllExport gecko::web::response getAssetPlatforms();
+			gecko::web::response getAssetPlatforms();
 	};
 }

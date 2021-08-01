@@ -12,7 +12,7 @@ namespace gecko {
 			// Example(s):
 			//    listFinancePlatforms()
 			// Notes: none
-			DllExport gecko::web::response listFinancePlatforms(
+			gecko::web::response listFinancePlatforms(
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
 			);
@@ -23,7 +23,7 @@ namespace gecko {
 			// Example(s):
 			//    listFinanceProducts()
 			// Notes: none
-			DllExport gecko::web::response listFinanceProducts(
+			gecko::web::response listFinanceProducts(
 				OPTIONAL const char* start_at = NULL,
 				OPTIONAL const char* end_at = NULL,
 				OPTIONAL unsigned short per_page = 100,

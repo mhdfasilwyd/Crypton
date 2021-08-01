@@ -13,7 +13,7 @@ namespace gecko {
 			//    getEvents()
 			//    getEvents("CN", "Meetup")
 			// Notes: parameters from and to_date are in format yyyy-mm-dd
-			DllExport gecko::web::response getEvents(
+			gecko::web::response getEvents(
 				OPTIONAL std::string country_code = "US",
 				OPTIONAL std::string type = "Conference",
 				OPTIONAL unsigned short page = 1,
@@ -28,7 +28,7 @@ namespace gecko {
 			// Example(s):
 			//    getEventCountries()
 			// Notes: none
-			DllExport gecko::web::response getEventCountries();
+			gecko::web::response getEventCountries();
 
 			// Action: fetches list of event types
 			// Returns: gecko::web::response
@@ -36,6 +36,6 @@ namespace gecko {
 			// Example(s):
 			//    getEventTypes()
 			// Notes: none
-			DllExport gecko::web::response getEventTypes();
+			gecko::web::response getEventTypes();
 	};
 }

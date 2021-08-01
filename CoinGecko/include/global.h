@@ -12,7 +12,7 @@ namespace gecko {
 			// Example(s):
 			//    getGlobalCryptoData()
 			// Notes: none
-			DllExport gecko::web::response getGlobalCryptoData();
+			gecko::web::response getGlobalCryptoData();
 
 			// Action: fetches cryptocurrency global decentralized finance(defi) data
 			// Returns: gecko::web::response
@@ -20,6 +20,6 @@ namespace gecko {
 			// Example(s):
 			//    getGlobalCryptoDefiData()
 			// Notes: none
-			DllExport gecko::web::response getGlobalCryptoDefiData();
+			gecko::web::response getGlobalCryptoDefiData();
 	};
 }

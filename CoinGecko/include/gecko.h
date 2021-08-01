@@ -81,6 +81,6 @@ namespace gecko {
 			// Example:
 			//    if (ping()) { ... } else { ... }
 			// Notes: should be checked before using any API functions
-			DllExport bool ping(); // just one function for 'ping', might as well put it in api.
+			bool ping(); // just one function for 'ping', might as well put it in api.
 	};
 }

@@ -12,6 +12,6 @@ namespace gecko {
 			// Example(s):
 			//    getTrendingCoins()
 			// Notes: none
-			DllExport gecko::web::response getTrendingCoins();
+			gecko::web::response getTrendingCoins();
 	};
 }

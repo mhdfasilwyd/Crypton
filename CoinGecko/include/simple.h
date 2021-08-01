@@ -13,7 +13,7 @@ namespace gecko {
 			//    getPrice("bitcoin", "usd,rub")
 			//    getPrice("bitcoin,ripple", "usd,rub", true, false, true, false)
 			// Notes: none
-			DllExport gecko::web::response getPrice(
+			gecko::web::response getPrice(
 				REQUIRED std::string id,
 				REQUIRED std::string vs_currencies,
 				OPTIONAL bool includeMarketCap = false,
@@ -29,7 +29,7 @@ namespace gecko {
 			//    getTokenPrice("ethereum", "0x4363e1485764d206b01ddc9ca121030585259f6f", "usd")
 			//    getTokenPrice("ethereum", "0x4363e1485764d206b01ddc9ca121030585259f6f", "usd", true, false, true, false)
 			// Notes: parameter id only supports value "ethereum" as of now
-			DllExport gecko::web::response getTokenPrice(
+			gecko::web::response getTokenPrice(
 				REQUIRED std::string id,
 				REQUIRED std::string contract_addresses,
 				REQUIRED std::string vs_currencies,
@@ -45,6 +45,6 @@ namespace gecko {
 			// Example(s):
 			//    getSupportedVsCurrencies()
 			// Notes: none
-			DllExport gecko::web::response getSupportedVsCurrencies();
+			gecko::web::response getSupportedVsCurrencies();
 	};
 }

@@ -13,7 +13,7 @@ namespace gecko {
 			//    listCoins(true)
 			//    listCoins(false)
 			// Notes: none
-			DllExport gecko::web::response listCoins(REQUIRED bool include_platform);
+			gecko::web::response listCoins(REQUIRED bool include_platform);
 
 			// Action: fetches all supported coins price, market cap, volume, and market related data
 			// Returns: gecko::web::response
@@ -23,7 +23,7 @@ namespace gecko {
 			//    getMarkets("usd", "bitcoin")
 			//    getMarkets("usd", "bitcoin,ripple,dogecoin", "24hr")
 			// Notes: parameter category only supports "decentralized_finance_defi" as of now
-			DllExport gecko::web::response getMarkets(
+			gecko::web::response getMarkets(
 				REQUIRED std::string vs_currency,
 				OPTIONAL const char* ids = NULL,
 				OPTIONAL const char* price_change_percentage = NULL,
@@ -41,7 +41,7 @@ namespace gecko {
 			//    getCoinData("bitcoin")
 			//    getCoinData("ripple", false, true, false)
 			// Notes: none
-			DllExport gecko::web::response getCoinData(
+			gecko::web::response getCoinData(
 				REQUIRED std::string id,
 				OPTIONAL bool localization = true,
 				OPTIONAL bool tickers = true,
@@ -58,7 +58,7 @@ namespace gecko {
 			//    getCoinTickers("bitcoin")
 			//    getCoinTickers("bitcoin", NULL, true)
 			// Notes: none
-			DllExport gecko::web::response getCoinTickers(
+			gecko::web::response getCoinTickers(
 				REQUIRED std::string id,
 				OPTIONAL const char* exchange_ids = NULL,
 				OPTIONAL bool include_exchange_logo = false,
@@ -74,7 +74,7 @@ namespace gecko {
 			//    getCoinHistory("bitcoin", "12-01-2019")
 			//    getCoinHistory("bitcoin", "12-01-2019", true)
 			// Notes: parameter date is in format "dd-mm-yyyy"
-			DllExport gecko::web::response getCoinHistory(
+			gecko::web::response getCoinHistory(
 				REQUIRED std::string id,
 				REQUIRED std::string date,
 				OPTIONAL bool localization = false
@@ -87,7 +87,7 @@ namespace gecko {
 			//    getCoinMarketHistory("ripple", "usd", "5")
 			//    
 			// Notes: none
-			DllExport gecko::web::response getCoinMarketHistory(
+			gecko::web::response getCoinMarketHistory(
 				REQUIRED std::string id,
 				REQUIRED std::string vs_currency,
 				REQUIRED std::string days,
@@ -100,7 +100,7 @@ namespace gecko {
 			// Example(s):
 			//    getCoinMarketHistoryWithinRange("ripple", "usd", "1422577232", "1302577232")
 			// Notes: parameters to and from are in UNIX timestamp format
-			DllExport gecko::web::response getCoinMarketHistoryWithinRange(
+			gecko::web::response getCoinMarketHistoryWithinRange(
 				REQUIRED std::string id,
 				REQUIRED std::string vs_currency,
 				REQUIRED std::string to,
@@ -114,7 +114,7 @@ namespace gecko {
 			//    getCoinStatusUpdates("bitcoin")
 			//    getCoinStatusUpdates("bitcoin", 50)
 			// Notes: function is in BETA
-			DllExport gecko::web::response getCoinStatusUpdates(
+			gecko::web::response getCoinStatusUpdates(
 				REQUIRED std::string id,
 				OPTIONAL unsigned short per_page = 100,
 				OPTIONAL unsigned short page = 1
@@ -127,7 +127,7 @@ namespace gecko {
 			//    getCoinOHLC("bitcoin", "usd", "1")
 			//    getCoinOHLC("ripple", "rub", "7")
 			// Notes: function is in BETA
-			DllExport gecko::web::response getCoinOHLC(
+			gecko::web::response getCoinOHLC(
 				REQUIRED std::string id,
 				REQUIRED std::string vs_currency,
 				REQUIRED std::string days

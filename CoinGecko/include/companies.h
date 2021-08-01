@@ -13,7 +13,7 @@ namespace gecko {
 			//    getCompaniesData("bitcoin");
 			//    getCompaniesData("ethereum");
 			// Notes: none
-			DllExport gecko::web::response getCompaniesData(
+			gecko::web::response getCompaniesData(
 				REQUIRED std::string id
 			);
 	};

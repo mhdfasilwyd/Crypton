@@ -12,7 +12,7 @@ namespace gecko {
 			// Example(s):
 			//    getCategories();
 			// Notes: none
-			DllExport gecko::web::response getCategories();
+			gecko::web::response getCategories();
 
 			// Action: list all categories with market data
 			// Returns: gecko::web::response
@@ -21,7 +21,7 @@ namespace gecko {
 			//    getCategoryMarketData();
 			//    getCategoryMarketData("market_cap_asc");
 			// Notes: none
-			DllExport gecko::web::response getCategoryMarketData(
+			gecko::web::response getCategoryMarketData(
 				OPTIONAL std::string order = "market_cap_desc"
 			);
 	};
