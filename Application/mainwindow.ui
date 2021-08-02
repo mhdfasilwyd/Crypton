@@ -10,13 +10,23 @@
     <height>320</height>
    </rect>
   </property>
-  <property name="cursor">
-   <cursorShape>BlankCursor</cursorShape>
-  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="wrapper">
+   <widget class="QStackedWidget" name="holder">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>480</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="home"/>
+    <widget class="QWidget" name="about"/>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>
