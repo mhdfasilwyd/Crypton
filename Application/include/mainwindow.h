@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "../CoinGecko/include/gecko.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +18,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    enum{
+        CRYPTON_HOME,
+        CRYPTON_DISPLAY,
+        CRYPTON_ABOUT
+    };
 };
 #endif // MAINWINDOW_H

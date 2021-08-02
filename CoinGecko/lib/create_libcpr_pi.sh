@@ -13,3 +13,7 @@ sudo make install
 
 # Copy Library to Local
 cp -ar lib/. ../../../lib/lib_pi/
+
+# Clean files
+cd ..
+rm -R cpr
