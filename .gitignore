@@ -3,4 +3,4 @@
 *.user
 moc_*
 ui_*
-Application/build*
+/Application/build/*
