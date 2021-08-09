@@ -23,5 +23,7 @@ private:
         CRYPTON_DISPLAY,
         CRYPTON_ABOUT
     };
+    gecko::api coinGecko;
+    QString getCryptoPrice(std::string crypto, std::string currency);
 };
 #endif // MAINWINDOW_H
