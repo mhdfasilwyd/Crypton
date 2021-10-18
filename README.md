@@ -11,3 +11,6 @@ Application is developed using Qt widgets, I want it fully C/C++ based.
 - [x] CoinGecko API support for Pi and Linux
 - [x] Integration to Qt
 - [ ] Qt feature addition
+  - [x] Basic crypto pricing
+# Contribution
+You can too contribute to this project!
