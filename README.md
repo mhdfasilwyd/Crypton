@@ -7,6 +7,10 @@ Raspberry Pi | Linux PC
 lib_pi | lib_pc
 # Application
 Application is developed using Qt widgets, I want it fully C/C++ based.
+# Building
+- Run **InstallDependency.sh** using terminal
+- Inside CoinGecko folder open terminal and run **make**
+- Inside Application open terminal and run **qmake && make**
 # Status
 - [x] CoinGecko API support for Pi and Linux
 - [x] Integration to Qt
