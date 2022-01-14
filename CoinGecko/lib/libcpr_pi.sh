@@ -15,5 +15,5 @@ sudo make install
 cp -ar lib/. ../../../lib/lib_pi/
 
 # Clean files
-cd ..
-rm -R cpr
+cd ../../
+sudo rm -R cpr
