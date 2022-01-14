@@ -8,9 +8,10 @@ lib_pi | lib_pc
 # Application
 Application is developed using Qt widgets, I want it fully C/C++ based.
 # Building
-- Run **InstallDependency.sh** using terminal
-- Inside CoinGecko folder open terminal and run **make**
-- Inside Application open terminal and run **qmake && make**
+- Type **. InstallDependency.sh** in terminal and click enter
+- Inside CoinGecko folder open terminal, type **make** and enter
+- Inside Application open terminal, type **qmake && make** and enter
+- And to run application type **. run.sh** and ENTER 
 # Status
 - [x] CoinGecko API support for Pi and Linux
 - [x] Integration to Qt
