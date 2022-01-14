@@ -1,4 +1,4 @@
-# Build CoinGecko Library for Raspberry
+# Build CoinGecko Library
 
 .PHONY : clean
 
@@ -25,7 +25,7 @@ SOURCES  = ./src/asset_platforms.cpp \
 	./src/web.cpp
 OBJECTS  = $(SOURCES:.cpp=.o)
 
-TARGET   = ./lib/lib_pi/libcoingecko.so
+TARGET   = ../Libraries/libcoingecko.so
 
 all: $(TARGET)
 

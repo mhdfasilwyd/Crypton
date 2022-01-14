@@ -14,7 +14,7 @@ RCC_DIR = $$DESTDIR
 UI_DIR = $$DESTDIR
 OBJECTS_DIR = $$DESTDIR
 
-LIBS += -L"$$PWD/../CoinGecko/lib/lib_pc" -lcoingecko -lcpr
+LIBS += -L"$$PWD/../Libraries/" -lcoingecko -lcpr
 
 SOURCES += \
     ./src/main.cpp \
